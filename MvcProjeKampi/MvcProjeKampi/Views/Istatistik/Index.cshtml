@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<div class="card-deck" >
+    <div class="card text-white bg-gradient-pink mb-4 " style="max-width: 23rem;">
+        
+        <div class="card-body">
+            <h5 class="card-text" style="text-align:center">Toplam Kategori Sayısı</h5>
+            <hr />
+            <h5 class="card-text" style="text-align:center"> @ViewBag.CategoryCount</h5>
+        </div>
+    </div>
+    <div class="card text-white bg-gradient-lime mb-4 " style="max-width: 23rem;">
+        
+        <div class="card-body">
+            <h5 class="card-text" style="text-align:center">Başlık tablosunda "yazılım" kategorisine ait başlık sayısı</h5>
+            <hr />
+            <h5 class="card-text" style="text-align:center"> @ViewBag.Heading</h5>
+        </div>
+    </div>
+    <div class="card text-white bg-gradient-yellow mb-4 " style="max-width: 23rem; ">
+        
+        <div class="card-body">
+            <h5 class="card-text" style="text-align:center">Yazar adında 'a' harfi geçen yazar sayısı</h5>
+            <hr />
+            <h5 class="card-text" style="text-align:center"> @ViewBag.Writer</h5>
+        </div>
+    </div>
+</div>
+<div class="card-deck">
+
+
+    <div class="card text-white bg-gradient-indigo mb-6 " style="max-width: 22rem;">
+        
+        <div class="card-body">
+            <h5 class="card-text" style="text-align:center">En fazla başlığa sahip kategori adı</h5>
+            <hr />  
+            <h5 class="card-text" style="text-align:center"> @ViewBag.HeadingMax</h5>
+        </div>
+    </div>
+    <div class="card text-white bg-gradient-teal mb-6 " style="max-width: 22rem; ">
+        
+        <div class="card-body">
+            <h5 class="card-text" style="text-align:center">Kategori tablosunda durumu true olan kategoriler ile false olan kategoriler arasındaki sayısal fark </h5>
+            <hr />
+            <h5 class="card-text" style="text-align:center"> @ViewBag.StatusFark</h5>
+        </div>
+    </div>
+</div>
+
